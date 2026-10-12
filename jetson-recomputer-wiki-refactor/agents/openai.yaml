@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jetson reComputer Wiki Refactor"
+  short_description: "Unify reComputer product docs using the shared Jetson UI."
+  brand_color: "#8FC31F"
+  default_prompt: "Use $jetson-recomputer-wiki-refactor to refactor this reComputer documentation family to the shared Jetson product template."

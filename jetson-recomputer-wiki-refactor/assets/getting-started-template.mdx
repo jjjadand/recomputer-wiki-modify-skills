@@ -1,0 +1,178 @@
+---
+description: "{{DESCRIPTION}}"
+title: "Getting Started with {{PRODUCT_FAMILY}}"
+keywords:
+  - reComputer
+  - Jetson
+  - Getting Started
+image: "{{HERO_IMAGE_URL}}"
+slug: /jetson/{{ROUTE_FAMILY}}/getting_started
+aliases:
+  - /{{LEGACY_ROUTE}}
+sku: "{{SKU_LIST}}"
+last_update:
+  date: "{{MM/DD/YYYY}}"
+  author: "{{AUTHOR}}"
+createdAt: "{{CREATED_AT}}"
+updatedAt: "{{UPDATED_AT}}"
+url: https://wiki.seeedstudio.com/jetson/{{ROUTE_FAMILY}}/getting_started/
+---
+
+import JetsonProductDocNav from '@site/src/components/jetson/JetsonProductDocNav';
+import {productFamilyDocNav} from '@site/src/data/jetson/productDocNavigation';
+
+# Getting Started with {{PRODUCT_FAMILY}}
+
+<JetsonProductDocNav {...productFamilyDocNav} />
+
+<div className="jetson-product-page">
+
+<section className="jetson-product-hero">
+  <div>
+    <span className="jetson-product-eyebrow">{{POSITIONING}} · NVIDIA Jetson</span>
+    <h2>{{OUTCOME_HEADLINE}}</h2>
+    <p>{{PRODUCT_SUMMARY}}</p>
+    <div className="jetson-product-actions">
+      <a className="jetson-product-button" href="{{STORE_URL}}" target="_blank" rel="noopener noreferrer">Get {{PRIMARY_MODEL}} ↗</a>
+      <a className="jetson-product-button jetson-product-button--secondary" href="#flash-jetpack">Start with JetPack ↓</a>
+    </div>
+  </div>
+  <div className="jetson-product-hero-media">
+    <img src="{{HERO_IMAGE_URL}}" alt="{{DESCRIPTIVE_PRODUCT_ALT}}" />
+  </div>
+</section>
+
+<div className="jetson-product-fact-grid">
+  <div className="jetson-product-fact"><strong>{{FACT_1}}</strong><span>{{FACT_1_CONTEXT}}</span></div>
+  <div className="jetson-product-fact"><strong>{{FACT_2}}</strong><span>{{FACT_2_CONTEXT}}</span></div>
+  <div className="jetson-product-fact"><strong>{{FACT_3}}</strong><span>{{FACT_3_CONTEXT}}</span></div>
+  <div className="jetson-product-fact"><strong>{{FACT_4}}</strong><span>{{FACT_4_CONTEXT}}</span></div>
+</div>
+
+## Choose Your Jetson Configuration
+
+{{VARIANT_INTRODUCTION}}
+
+<div className="jetson-product-variant-grid">
+  <article className="jetson-product-variant-card">
+    <span className="jetson-product-variant-badge">{{VARIANT_BADGE}}</span>
+    <h3>{{MODEL_NAME}}</h3>
+    <p>{{MODEL_USE_CASE}}</p>
+    <div className="jetson-product-variant-metrics">
+      <span>{{JETSON_MODULE}}</span>
+      <span>{{MEMORY}}</span>
+      <span>{{AI_PERFORMANCE}}</span>
+    </div>
+  </article>
+</div>
+
+## Why {{PRODUCT_FAMILY}}
+
+<div className="jetson-product-feature-grid">
+  <div className="jetson-product-feature"><strong>{{FEATURE}}</strong><span>{{FEATURE_VALUE}}</span></div>
+</div>
+
+## Specifications
+
+<div className="jetson-product-table-wrap">
+
+| Item | Specification |
+| --- | --- |
+| NVIDIA Jetson Module | {{JETSON_MODULE}} |
+| Storage | {{STORAGE}} |
+| Networking | {{NETWORKING}} |
+| Power | {{POWER}} |
+
+</div>
+
+## Hardware Overview
+
+<div className="jetson-product-hardware-gallery">
+  <figure>
+    <img src="{{HARDWARE_VIEW_URL}}" alt="{{HARDWARE_VIEW_ALT}}" />
+    <figcaption>{{HARDWARE_VIEW_CAPTION}}</figcaption>
+  </figure>
+</div>
+
+For pinouts and interface configuration, continue to the [Hardware & I/O guide](/jetson/{{ROUTE_FAMILY}}/hardware_and_interface_usage/).
+
+## Flash JetPack
+
+<div className="jetson-product-step-flow">
+<section className="jetson-product-step-item">
+  <span className="jetson-product-step-number">1</span>
+  <div className="jetson-product-step-content">
+    <h3>Choose and Download the BSP</h3>
+    <p className="jetson-product-step-label">Step 1 · Match the image to the exact Jetson configuration</p>
+
+{{BSP_SELECTION_INSTRUCTIONS}}
+
+  </div>
+</section>
+
+<section className="jetson-product-step-item">
+  <span className="jetson-product-step-number">2</span>
+  <div className="jetson-product-step-content">
+    <h3>Prepare the Equipment</h3>
+    <p className="jetson-product-step-label">Step 2 · Set up the supported Ubuntu host, power, and cables</p>
+
+{{EQUIPMENT_LIST}}
+
+  </div>
+</section>
+
+<section className="jetson-product-step-item">
+  <span className="jetson-product-step-number">3</span>
+  <div className="jetson-product-step-content">
+    <h3>Enter Force Recovery Mode</h3>
+    <p className="jetson-product-step-label">Step 3 · Use the product controls and verify its USB ID</p>
+
+{{RECOVERY_INSTRUCTIONS_AND_IMAGE}}
+
+  </div>
+</section>
+
+<section className="jetson-product-step-item">
+  <span className="jetson-product-step-number">4</span>
+  <div className="jetson-product-step-content">
+    <h3>Extract and Flash the Image</h3>
+    <p className="jetson-product-step-label">Step 4 · Run the command supplied with this product image</p>
+
+{{FLASH_COMMANDS}}
+
+  </div>
+</section>
+</div>
+
+## Applications
+
+<div className="jetson-product-application-grid">
+  <article className="jetson-product-application-card">
+    <a className="jetson-product-application-cover" href="{{APPLICATION_ROUTE}}" aria-label="Open {{APPLICATION_TITLE}}">
+      <img src="{{APPLICATION_COVER}}" alt="{{APPLICATION_ALT}}" />
+    </a>
+    <div className="jetson-product-application-body">
+      <div className="jetson-product-application-labels" aria-label="Application capabilities">
+        <span>{{CAPABILITY}}</span>
+      </div>
+      <h3><a href="{{APPLICATION_ROUTE}}">{{APPLICATION_TITLE}}</a></h3>
+      <p>{{APPLICATION_OUTCOME}}</p>
+    </div>
+  </article>
+</div>
+
+## Resources
+
+<div className="jetson-product-resource-grid">
+  <a className="jetson-product-resource-card" href="{{RESOURCE_URL}}" target="_blank" rel="noopener noreferrer">
+    <span className="jetson-product-resource-icon" aria-hidden="true">PDF</span>
+    <span className="jetson-product-resource-copy"><strong>{{RESOURCE_TITLE}}</strong><small>{{RESOURCE_DESCRIPTION}}</small></span>
+    <span className="jetson-product-resource-arrow" aria-hidden="true">↗</span>
+  </a>
+</div>
+
+## Tech Support & Product Discussion
+
+{{STANDARD_SUPPORT_BLOCK}}
+
+</div>

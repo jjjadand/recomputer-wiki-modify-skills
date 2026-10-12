@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jetson reComputer Wiki Audit"
+  short_description: "Audit reComputer docs for UI and content consistency."
+  brand_color: "#8FC31F"
+  default_prompt: "Use $jetson-recomputer-wiki-audit to review this reComputer documentation family for template consistency."
